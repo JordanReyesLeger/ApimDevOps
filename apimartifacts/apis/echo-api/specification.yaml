@@ -87,6 +87,29 @@ paths:
       responses:
         '200':
           description: ''
+  /clone-67613/resource:
+    get:
+      summary: Retrieve resource (clone)
+      description: A demonstration of a GET call on a sample resource. It is handled by an "echo" backend which returns a response equal to the request (the supplied headers and body are being returned as received).
+      operationId: 676130884e20cffe1e82e590
+      parameters:
+        - name: param1
+          in: query
+          description: A sample parameter that is required and has a default value of "sample".
+          required: true
+          schema:
+            enum:
+              - sample
+            type: string
+            default: sample
+        - name: param2
+          in: query
+          description: 'Another sample parameter, set to not required.'
+          schema:
+            type: number
+      responses:
+        '200':
+          description: Returned in all cases.
 components:
   securitySchemes:
     apiKeyHeader:

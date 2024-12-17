@@ -101,10 +101,11 @@ paths:
   /test:
     get:
       summary: Test
+      description: Test
       operationId: test
       responses:
         '200':
-          description: 
+          description: ''
 components:
   schemas:
     DemoTest:
