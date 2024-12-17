@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "DemoLive",
+    "description": "Mi demo live",
+    "state": "published",
+    "subscriptionRequired": false
+  }
+}

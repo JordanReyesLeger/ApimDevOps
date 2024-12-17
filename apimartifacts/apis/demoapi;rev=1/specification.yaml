@@ -1,0 +1,119 @@
+openapi: 3.0.1
+info:
+  title: DemoApi
+  version: ''
+servers:
+  - url: https://apimdemojrl.azure-api.net/static
+paths:
+  /resource:
+    get:
+      summary: Retrieve resource
+      description: A demonstration of a GET call on a sample resource. It is handled by an "echo" backend which returns a response equal to the request (the supplied headers and body are being returned as received).
+      operationId: retrieve-resource
+      parameters:
+        - name: param1
+          in: query
+          description: A sample parameter that is required and has a default value of "sample".
+          required: true
+          schema:
+            enum:
+              - sample
+            type: string
+            default: sample
+        - name: param2
+          in: query
+          description: 'Another sample parameter, set to not required.'
+          schema:
+            type: number
+        - name: GlobalHeader
+          in: header
+          description: Global header
+          required: true
+          schema:
+            enum:
+              - GlobalHeader
+            type: string
+        - name: AllApiHeader
+          in: header
+          description: All Api header
+          required: true
+          schema:
+            enum:
+              - AllApiHeader
+            type: string
+        - name: MethodHeader
+          in: header
+          description: Method Header
+          required: true
+          schema:
+            enum:
+              - MethodHeader
+            type: string
+        - name: Temo
+          in: header
+          schema:
+            type: ''
+      responses:
+        '200':
+          description: Returned in all cases.
+        '401':
+          description: Error Header
+          content:
+            application/json: { }
+    put:
+      summary: Modify Resource
+      description: A demonstration of a PUT call handled by the same "echo" backend as above. You can now specify a request body in addition to headers and it will be returned as well.
+      operationId: modify-resource
+      responses:
+        '200':
+          description: ''
+    delete:
+      summary: Remove resource
+      description: A demonstration of a DELETE call which traditionally deletes the resource. It is based on the same "echo" backend as in all other operations so nothing is actually deleted.
+      operationId: remove-resource
+      responses:
+        '200':
+          description: ''
+    head:
+      summary: Retrieve header only
+      description: The HEAD operation returns only headers. In this demonstration a policy is used to set additional headers when the response is returned and to enable JSONP.
+      operationId: retrieve-header-only
+      responses:
+        '200':
+          description: ''
+  /test01:
+    post:
+      summary: Create resource
+      description: A demonstration of a POST call based on the echo backend above. The request body is expected to contain JSON-formatted data (see example below). A policy is used to automatically transform any request sent in JSON directly to XML. In a real-world scenario this could be used to enable modern clients to speak to a legacy backend.
+      operationId: create-resource
+      requestBody:
+        description: "{\n  \"RequestMessage\":\"Hello\"\n}"
+        content:
+          application/json:
+            example:
+              vehicleType: train
+              maxSpeed: 125
+              avgSpeed: 90
+              speedUnit: mph
+      responses:
+        '200':
+          description: ''
+components:
+  schemas:
+    DemoTest:
+      type: object
+      properties:
+        RequestMessage:
+          type: string
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

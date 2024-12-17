@@ -1,0 +1,9 @@
+{
+  "properties": {
+    "displayName": "PrductoDemo",
+    "description": "Desc",
+    "approvalRequired": false,
+    "state": "published",
+    "subscriptionRequired": true
+  }
+}

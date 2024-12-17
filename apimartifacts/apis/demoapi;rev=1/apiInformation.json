@@ -1,0 +1,18 @@
+{
+  "properties": {
+    "path": "static",
+    "apiRevision": "1",
+    "apiVersionSetId": "/subscriptions/c38296c2-b9e0-4d1e-b420-17cfe5d4dbba/resourceGroups/ApiManagment/providers/Microsoft.ApiManagement/service/ApimDemoJRL/apiVersionSets/67521f2934d6bdebe0480257",
+    "authenticationSettings": {},
+    "displayName": "DemoApi",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "http://echoapi.cloudapp.net/api",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}

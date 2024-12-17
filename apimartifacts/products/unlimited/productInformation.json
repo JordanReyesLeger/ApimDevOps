@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "Guest",
+    "description": "Subscribers have completely unlimited access to the API. Administrator approval is required.",
+    "state": "published",
+    "subscriptionRequired": false
+  }
+}
