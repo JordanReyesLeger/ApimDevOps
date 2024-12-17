@@ -1,0 +1,6 @@
+apimServiceName: qa
+namedValues:
+  - name: TestVar
+    properties:
+      displayName: TestVar
+      value: "QA"
