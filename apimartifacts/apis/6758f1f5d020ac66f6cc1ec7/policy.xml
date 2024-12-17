@@ -15,7 +15,7 @@
 				<audience>00000003-0000-0000-c000-000000000000</audience>
 			</audiences>
 			<issuers>
-				<issuer>https://sts.windows.net/48abbadb-2af3-46ad-a70e-489e82ac1312</issuer>
+				<issuer>https://sts.windows.net/48abbadb-2af3-46ad-a70e-489e82ac1312/</issuer>
 				<issuer>https://login.microsoftonline.com/48abbadb-2af3-46ad-a70e-489e82ac1312/v2.0</issuer>
 			</issuers>
 		</validate-jwt>
