@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "scope": "/subscriptions/c38296c2-b9e0-4d1e-b420-17cfe5d4dbba/resourceGroups/ApiManagment/providers/Microsoft.ApiManagement/service/ApimDemoJRL/products/productoaprobacacion",
+    "allowTracing": false,
+    "ownerId": "/subscriptions/c38296c2-b9e0-4d1e-b420-17cfe5d4dbba/resourceGroups/ApiManagment/providers/Microsoft.ApiManagement/service/ApimDemoJRL/users/1",
+    "state": "active"
+  }
+}
