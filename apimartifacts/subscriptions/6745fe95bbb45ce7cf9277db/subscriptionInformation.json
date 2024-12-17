@@ -1,9 +1,0 @@
-{
-  "properties": {
-    "displayName": "JordanPruebas",
-    "scope": "/subscriptions/c38296c2-b9e0-4d1e-b420-17cfe5d4dbba/resourceGroups/ApiManagment/providers/Microsoft.ApiManagement/service/ApimDemoJRL/products/productodemo",
-    "allowTracing": false,
-    "ownerId": "/subscriptions/c38296c2-b9e0-4d1e-b420-17cfe5d4dbba/resourceGroups/ApiManagment/providers/Microsoft.ApiManagement/service/ApimDemoJRL/users/6745bf0b217d2017f8ac338b",
-    "state": "active"
-  }
-}
