@@ -1,0 +1,6 @@
+apimServiceName: dev
+namedValues:
+  - name: TestVar
+    properties:
+      displayName: TestVar
+      value: "Dev"
